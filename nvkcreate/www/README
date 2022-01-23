@@ -18,7 +18,7 @@ The JSON payload returned from the authentication API must have the following ke
 - quantity:      1
 - message:       'anystringhere'
 
-Inside of the product key prompt, the user can insert any value, since the localhost server will always return a successful result.
+Inside of the product key prompt, the user can insert any value that is longer than 25 characters, since the localhost server will always return a successful result, however, the local key verification procedure will be skipped when the user's key is longer than 25 and the API returns a successful. If the user inserts a key less than 25 characters, the key will still be successfully authenticated, but will be verified remotely everytime the user starts the extension - which displays the annoying 'Thank You' pop-up dialog.
 
 ___
 

@@ -1,4 +1,8 @@
-certs
 node_modules
-output
 .DS_Store
+
+# nvkcreate
+nvkcreate/output
+nvkcreate/*/certs
+nvkcreate/src
+nvkcreate/bin
